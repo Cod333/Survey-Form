@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+  <head>
+  <div class="container">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this form with the required information</p>
+</body>
+<form id="survey-form">
+  <div class="form-field">
+    <label id="name-label">Name:<input id="name" type="text" class="form-set1" placeholder="Enter Your Name"required /></label>
+  </div>
+  <div class="form-field">
+    <label id="email-label">Email:<input id="email" type="email" class="form-set1" placeholder="Enter Your Email"required /></label>
+  </div>
+  <div class="form-field">
+    <label id="number-label">Number:<input id="number" class="form-set1" placeholder="Enter Number" type="number" min="0" max="10000000000000000000" ></label>
+  </div>
+  <div class="form-field">
+   <label>How did you hear about us?</label>
+  <div class="form-field">
+   <select id="dropdown">
+    <option value="">(select one)</option>
+            <option value="1">Company Website</option>
+            <option value="2">Friend</option>
+            <option value="3">Advertisement
+            </option>
+            <option value="4">Social Media</option>
+            <option value="5">Online Search</option>
+  </select>
+  </div>
+  <div class="form-field">
+  <label>Account Type:</label>
+  </div>
+  <div class="form-field">
+        <label><input type="radio" value="personal" name="account-type" class="accttype" /> Personal Account</label>
+  </div>
+  <div class="form-field">
+      <label><input type="radio" value="business" name="account-type" class="accttype" /> Business Account</label>
+  </div>
+  <div class="form-field">
+    <label>Would you recommend us to a friend?
+   </label>
+  </div>
+  <div class="form-field">
+    <label><input type="checkbox" value="yes" name="recommend" class="reco-box">Yes</label>
+  </div>
+  <div class="form-field">
+    <label><input type="checkbox" value="no" name="recommend" class="reco-box" >No</label>
+  </div>
+  <div class="form-field">
+    <label><input type="checkbox" value="maybe" name="recommend" class="reco-box">Maybe</label>
+  </div>
+  <div class="form-field">
+    <label>Any comments or suggestions?</label>
+   <textarea name="comments" class="textfield" placeholder="Enter Your Comments or Questions Here..."></textarea>
+  </div>
+<input id="submit" type="submit"/>
+</form>
+  </div>
+</html>
